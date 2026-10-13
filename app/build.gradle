@@ -1,0 +1,14 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'kr.hyun.fishing'
+    compileSdk 34
+    defaultConfig { applicationId 'kr.hyun.fishing'; minSdk 29; targetSdk 34; versionCode 1; versionName '1.0' }
+    signingConfigs { release { storeFile file('fishing.keystore'); storePassword 'fishing2026'; keyAlias 'fishing'; keyPassword 'fishing2026' } }
+    buildTypes { release { minifyEnabled false; signingConfig signingConfigs.release } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+}

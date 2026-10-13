@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#FFFFFF">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:orientation="horizontal" android:gravity="center_vertical" android:background="#0B3A5B" android:paddingLeft="8dp" android:paddingRight="8dp">
+        <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="취소" android:textColor="#FFFFFF" android:background="@android:color/transparent"/>
+        <TextView android:id="@+id/title" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="사진 선택" android:textColor="#FFFFFF" android:textSize="18sp" android:gravity="center"/>
+        <Button android:id="@+id/btnDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="완료" android:textColor="#F5A623" android:textStyle="bold" android:background="@android:color/transparent"/>
+    </LinearLayout>
+    <TextView android:id="@+id/hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:textSize="12sp" android:textColor="#6B7F92" android:text="사진을 눌러 선택 (여러 장 가능) · 최근 순"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/grid" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>
